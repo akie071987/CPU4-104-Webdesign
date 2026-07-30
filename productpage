@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book · Marginalia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Literata:ital,wght@0,400;0,500;1,400&family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="index.html" class="logo"><span class="mark">M</span>arginalia <span class="tagline">Books, unhurried</span></a>
+    <button class="nav-toggle" data-nav-toggle aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    <ul class="nav-links" data-nav-links>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html" aria-current="page">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="cart.html" class="cart-link">Cart <span class="cart-badge" data-cart-badge>0</span></a>
+    </div>
+  </nav>
+</header>
+
+<div class="page-header">
+  <div class="container">
+    <span class="breadcrumb"><a href="index.html">Home</a> / <a href="shop.html">Shop</a> / <span id="breadcrumb-title">Book</span></span>
+  </div>
+</div>
+
+<main class="section">
+  <div class="container">
+    <div class="detail" id="detail-container"></div>
+
+    <section id="related-section">
+      <h2 class="related-title">More from this shelf</h2>
+      <div class="product-grid" id="related-grid"></div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-logo">Marginalia</div>
+      <p>A small bookshop for people who dog-ear pages and write in the margins.</p>
+      <form class="newsletter-form" onsubmit="return false;">
+        <label for="newsletter-email" class="visually-hidden">Email address</label>
+        <input type="email" id="newsletter-email" placeholder="Your email">
+        <button type="submit" class="btn btn-primary">Join</button>
+      </form>
+    </div>
+    <div>
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="shop.html">All books</a></li>
+        <li><a href="cart.html">Your cart</a></li>
+        <li><a href="about.html">About us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <ul>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="contact.html">Shipping &amp; returns</a></li>
+        <li><a href="contact.html">FAQs</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <p>14 Bindery Lane<br>Warrington, UK</p>
+      <p>Tue–Sat, 10am–6pm</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span data-year></span> Marginalia Books. All rights reserved.</span>
+    <span>Made with ink and a little dust.</span>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/shop.js"></script>
+<script src="js/product.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
